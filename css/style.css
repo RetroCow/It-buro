@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Arial, sans-serif;
+    background-color: #1ba0ef;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    background-image: url('../img/Cloud.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+.link-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-bottom: 35px;
+}
+
+.link-list li {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: white 1px solid;
+}
+
+.link-list li:first-child {
+    padding-left: 0px;
+    padding-right: 5px;
+    border-left: none;
+}
+
+.link-list a {
+    color: white;
+}
+
+.main-header {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 41px;
+}
+
+.beginning-text {
+    margin-bottom: 21px;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+}
+
+.beginning-text a {
+    color: white;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+
+.description p {
+    width: 400px;
+}
+
+.description p:first-child {
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.disclaimer {
+    position: relative;
+    font-size: 13px;
+    padding-left: 70px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+}
+
+.disclaimer::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/BX-logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+footer {
+    flex: 0 0 auto;
+    font-size: 11px;
+    padding-top: 31px;
+    margin-bottom: 29px;
+    border-top: white 1px solid;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
